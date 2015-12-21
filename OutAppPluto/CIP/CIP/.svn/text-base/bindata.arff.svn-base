@@ -1,0 +1,59 @@
+@relation androidApps.symbolic
+
+@attribute de.blau.android {0, 1} 
+@attribute uk.ac.cam.cl.dtg.android.language {0, 1} 
+@attribute com.fsck.k9 {0, 1} 
+@attribute air.uk.co.bbc.android.mediaplayer {0, 1} 
+@attribute com.sonos.acr {0, 1} 
+@attribute com.mobiata.flighttrack {0, 1} 
+@attribute org.connectbot {0, 1} 
+@attribute com.zegoggles.smssync {0, 1} 
+@attribute com.spryfox.tripletown {0, 1} 
+@attribute edu.berkeley.icsi.netalyzr.android {0, 1} 
+@attribute com.adobe.reader {0, 1} 
+@attribute com.ironhidegames.android.kingdomrush {0, 1} 
+@attribute com.zynga.words {0, 1} 
+@attribute com.sportstracklive.stopwatch {0, 1} 
+@attribute org.yousense.gardens {0, 1} 
+@attribute es.senselesssolutions.gpl.weightchart {0, 1} 
+@attribute dk.logisoft.aircontrol {0, 1} 
+@attribute me.guillaumin.android.osmtracker {0, 1} 
+@attribute racTravel.app {0, 1} 
+@attribute com.ocado.mobile.android {0, 1} 
+@attribute uk.co.olilan.touchcalendar {0, 1} 
+@attribute com.farproc.wifi.analyzer {0, 1} 
+@attribute uk.amazon.mShop.android {0, 1} 
+@attribute org.cohortor.gstrings {0, 1} 
+@attribute com.keramidas.TitaniumBackup {0, 1} 
+@attribute com.ironhidegames.android.kingdomrushfrontiers {0, 1} 
+@attribute com.dropbox.android {0, 1} 
+@attribute ukfree.jersey.tvguide {0, 1} 
+@attribute com.coldbeamgames.beathazardultrahumblefull {0, 1} 
+@attribute com.nianticproject.ingress {0, 1} 
+@attribute mobi.beyondpod.unlockkey {0, 1} 
+@attribute com.agilesoftresource {0, 1} 
+@attribute com.distractionware.superhexagon.humble {0, 1} 
+@attribute edu.illinois.seclab.repackaged.wifidirect {0, 1} 
+@attribute uk.ac.cam.cl.dtg.android.time.BusTimetables {0, 1} 
+@attribute com.eclipsim.gpsstatus2 {0, 1} 
+@attribute com.speedsoftware.sqleditor {0, 1} 
+@attribute net.osmand {0, 1} 
+@attribute eu.chainfire.supersu {0, 1} 
+@attribute com.visualit.tubeLondonCity {0, 1} 
+@attribute mobi.beyondpod {0, 1} 
+@attribute ralcock.cbf {0, 1} 
+@attribute com.overlook.android.fing {0, 1} 
+@attribute com.spotify.mobile.android.ui {0, 1} 
+@attribute com.glu.android.bonsai_adfree {0, 1} 
+@attribute com.bigeyes0x0.trickstermod {0, 1} 
+@attribute com.hyperkani.rope {0, 1} 
+@attribute com.pocketools.currency {0, 1} 
+@attribute bbc.iplayer.android {0, 1} 
+@attribute com.thales.android.view {0, 1} 
+@attribute com.chartcross.gpstest {0, 1} 
+@attribute com.humblebundle.library {0, 1} 
+@attribute com.humblebundle.downloader {0, 1} 
+
+@data
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
