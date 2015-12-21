@@ -1,7 +1,7 @@
 
 public class Preferences {
 
-	public static final String WordnetDictionaryDir = "/home/soteris/Projects/SCEA/scea/AutoTool/InAppAttributeExtractor/dict";
+	public static final String WordnetDictionaryDir = "WORDNET/dict";
 	public static final String resultLog = "resultLog.txt";
 	/** Stores unique op list per selected category */
 	public static final String uniqueResultLog = "uniqueResultLog.txt";
