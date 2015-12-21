@@ -1,0 +1,99 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+
+
+public class Loader {
+	
+	/**
+	 * 
+	 * @param opportunities
+	 * @param inFilename 
+	 */
+	public static void loadOpportunities(
+			HashMap<String, HashSet<String>> opportunities, String inFilename) {
+		// TODO Auto-generated method stub
+		
+		try {
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(inFilename));
+			
+			String line = "";
+			
+			while((line = bufferedReader.readLine()) != null ){
+				String[] lineComponents = line.split(":");
+				
+				//FIND DEPENDENCIES
+				HashSet<String> dependencies = new HashSet<String>();
+				
+				if(lineComponents.length > 1){
+					//opportunity has dependencies
+					
+					//get dependencies
+					String[] potentialDependencies = lineComponents[1].split(",");
+					for(String potentialDependency : potentialDependencies){
+						dependencies.add(potentialDependency);
+					}
+				}
+				
+				//STORE OPPORTUNITY
+				opportunities.put(lineComponents[0], dependencies);
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	public static void loadPermissionOpportunitiesMap(
+			HashMap<String, HashSet<String>> opportunities,
+			HashMap<String, HashSet<String>> permissionOpportunitiesMap,
+			String inFilename) {
+		// TODO Auto-generated method stub
+		try {
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(inFilename));
+			
+			String line = "";
+			
+			while((line = bufferedReader.readLine()) != null ){
+				String[] lineComponents = line.split(":");
+				
+				//FIND OPPORTUNITIES
+				HashSet<String> opportunitiesInFile = new HashSet<String>();
+				
+				if(lineComponents.length > 1){
+					//permission is mapped to opportunity
+					
+					//get opportunities
+					String[] potentialOppportunities = lineComponents[1].split(",");
+					for(String potentialOpportunity : potentialOppportunities){
+						//check if file opportunity is a real opportunity
+						if(opportunities.containsKey(potentialOpportunity)){
+							opportunitiesInFile.add(potentialOpportunity);
+						}
+					}
+				}
+				
+				//STORE PERMISSION-OPPORTUNITIES MAP
+				permissionOpportunitiesMap.put(lineComponents[0], opportunitiesInFile);
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

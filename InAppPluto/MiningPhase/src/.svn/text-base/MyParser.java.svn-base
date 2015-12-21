@@ -1,0 +1,17 @@
+
+public class MyParser {
+
+	public static void parse(String string) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 * For each category directory
+		 * 		For each app
+		 * 			If .xml -> xmlParse
+		 * 			else if .db || .sqlite -> dbParse
+		 * 			else if .json -> JsonParser
+		 * 			else -> No parser for this file
+		 */
+	}
+
+}
