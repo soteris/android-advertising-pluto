@@ -2,7 +2,7 @@
 If you end up using any of our code, please cite our paper:
 
 Demetriou, Soteris, et al. "Free for All! Assessing User Data Exposure to Advertising Libraries on Android" Proceedings of the 23rd Annual Network and Distributed System Security Symposium (NDSS). 2016.
----------------------------------------------------
+
 
 # Instructions to run In-app Pluto.
 
@@ -78,12 +78,12 @@ Example:
 gender:person:1:attribute:0.0005
 workout:activity:0:interest:0.03
 ```
-
-(a) Keywords are the information the tool will look for inside the app's files.
-(b) Keyword category is an arbitratily define categorization of keywords. This could be person for demographic keywords such as gender.
-(c) The third parameter is an interger depicting the wordnet sense id (or meaning id of the word). Every word can have different meanings in different context. The wordnet graph enumerates the meanings or senses for every word.
-(d) The fourth attribute decides the type of the keyword. This dictates the methodology the tool will use. Different one is used for attributes and another for interests. For example, workout is an interest whereas gender is an attribute.
-(e) The fifth attribute is a weight [0.0-1.0] indicating how sensitive the keyword is (1 is maximum sensitivity). In the paper we used an advertising cost model to determine this but you can have your own depending on the kinds of keywords you have.
+Parameter explanation:
+1. Keywords are the information the tool will look for inside the app's files.
+2. Keyword category is an arbitratily define categorization of keywords. This could be person for demographic keywords such as gender.
+3. The third parameter is an interger depicting the wordnet sense id (or meaning id of the word). Every word can have different meanings in different context. The wordnet graph enumerates the meanings or senses for every word.
+4. The fourth attribute decides the type of the keyword. This dictates the methodology the tool will use. Different one is used for attributes and another for interests. For example, workout is an interest whereas gender is an attribute.
+5. The fifth attribute is a weight [0.0-1.0] indicating how sensitive the keyword is (1 is maximum sensitivity). In the paper we used an advertising cost model to determine this but you can have your own depending on the kinds of keywords you have.
 
 ### Permission - Opportunities
 The second input file the tool assumes it exists holds associations between Android permissions and keywords (or opportunities).
