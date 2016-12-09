@@ -79,6 +79,7 @@ gender:person:1:attribute:0.0005
 workout:activity:0:interest:0.03
 ```
 Parameter explanation:
+
 1. Keywords are the information the tool will look for inside the app's files.
 2. Keyword category is an arbitratily define categorization of keywords. This could be person for demographic keywords such as gender.
 3. The third parameter is an interger depicting the wordnet sense id (or meaning id of the word). Every word can have different meanings in different context. The wordnet graph enumerates the meanings or senses for every word.
