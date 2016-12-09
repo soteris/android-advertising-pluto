@@ -52,6 +52,7 @@ Inside each apk directory you will find a list of files created by the app at ru
 
 ## Requirements
 You need to include the following natural language processing libraries:
+
 1. ws4j-1.0.1.jar
 2. jawjaw-1.0.2.jar
 3. edu.mit.jwi_2.3.3.jar
