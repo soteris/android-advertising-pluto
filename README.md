@@ -82,7 +82,7 @@ workout:activity:0:interest:0.03
 Parameter explanation:
 
 1. Keywords are the information the tool will look for inside the app's files.
-2. Keyword category is an arbitratily define categorization of keywords. This could be person for demographic keywords such as gender.
+2. Keyword category is an arbitrarily defined categorization of keywords. This could be person for demographic keywords such as gender.
 3. The third parameter is an interger depicting the wordnet sense id (or meaning id of the word). Every word can have different meanings in different context. The wordnet graph enumerates the meanings or senses for every word.
 4. The fourth attribute decides the type of the keyword. This dictates the methodology the tool will use. Different one is used for attributes and another for interests. For example, workout is an interest whereas gender is an attribute.
 5. The fifth attribute is a weight [0.0-1.0] indicating how sensitive the keyword is (1 is maximum sensitivity). In the paper we used an advertising cost model to determine this but you can have your own depending on the kinds of keywords you have.
